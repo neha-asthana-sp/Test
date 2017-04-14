@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/neha.asthana/workspace/FDPrj1/lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/neha.asthana/workspace/FDPrj1/lib/identityiq.jar"/>
+	<classpathentry kind="lib" path="C:/Users/neha.asthana/workspace/FDPrj1/lib/sailpoint.IIQ_Deployment_Accelerator_3.0.1.I20170227-1747.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

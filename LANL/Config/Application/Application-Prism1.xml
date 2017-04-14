@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Application connector="sailpoint.connector.JDBCConnector" featuresString="DISCOVER_SCHEMA, PROVISIONING, ENABLE, UNLOCK" name="PRISM1" profileClass="" type="JDBC">
+  <Attributes>
+    <Map>
+      <entry key="SQL" value="select * from orangehrm.hs_hr_employee;"/>
+      <entry key="acctAggregationEnd">
+        <value>
+          <Date>1483673175043</Date>
+        </value>
+      </entry>
+      <entry key="acctAggregationStart">
+        <value>
+          <Date>1483673175002</Date>
+        </value>
+      </entry>
+      <entry key="aggregationMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="buildMapRule" value="PRISM - BuildMap"/>
+      <entry key="compositeDefinition"/>
+      <entry key="deltaTable"/>
+      <entry key="driverClass" value="com.mysql.jdbc.Driver"/>
+      <entry key="getDeltaSQL"/>
+      <entry key="group.SQL" value="select * from orangehrm.city_code;"/>
+      <entry key="group.aggregationMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="group.deltaTable"/>
+      <entry key="group.driverClass" value="com.mysql.jdbc.Driver"/>
+      <entry key="group.getDeltaSQL"/>
+      <entry key="group.isPermissionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="group.mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="group.password" value="1:7qu+XvQvQHsmirRAPzhCBw=="/>
+      <entry key="group.url" value="jdbc:mysql://192.168.184.245/orangehrm"/>
+      <entry key="group.useExecuteQuery">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="group.user" value="root"/>
+      <entry key="isPermissionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="jdbcProvisionRule" value="PRISM - Provision"/>
+      <entry key="mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+      <entry key="nativeChangeDetectionAttributes"/>
+      <entry key="nativeChangeDetectionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionOperations"/>
+      <entry key="partitionMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="partitionStatements"/>
+      <entry key="password" value="1:7qu+XvQvQHsmirRAPzhCBw=="/>
+      <entry key="provisionRule" value="globalRule"/>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US" value="This application represents the PRISM (Purchasing, Resourcing, Information Systems Management) Application."/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="templateApplication" value="JDBC Template"/>
+      <entry key="url" value="jdbc:mysql://192.168.184.245/orangehrm"/>
+      <entry key="useExecuteQuery">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="user" value="root"/>
+    </Map>
+  </Attributes>
+  <CorrelationRule>
+    <Reference class="sailpoint.object.Rule" name="PRISM - Correlation"/>
+  </CorrelationRule>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Schemas>
+    <Schema displayAttribute="" identityAttribute="emp_number" instanceAttribute="" nativeObjectType="account" objectType="account">
+      <AttributeDefinition name="emp_number" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="employee_id" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_lastname" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_firstname" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_middle_name" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_nick_name" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_smoker" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="ethnic_race_code" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_birthday" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="nation_code" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_gender" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_marital_status" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_ssn_num" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_sin_num" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_other_id" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_dri_lice_num" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_dri_lice_exp_date" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_military_service" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_status" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="job_title_code" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="eeo_cat_code" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="work_station" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_street1" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_street2" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="city_code" schemaObjectType="group" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="coun_code" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="provin_code" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_zipcode" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_hm_telephone" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_mobile" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_work_telephone" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_work_email" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="sal_grd_code" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="joined_date" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="emp_oth_email" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="termination_id" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom1" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom2" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom3" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom4" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom5" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom6" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom7" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom8" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom9" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="custom10" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+    <Schema displayAttribute="" identityAttribute="name" instanceAttribute="" nativeObjectType="group" objectType="group">
+      <AttributeDefinition name="name" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+  </Schemas>
+</Application>
